@@ -73,6 +73,7 @@ const saveRoundScore = () => {
             <input
               v-model.number="current.s1"
               type="number"
+              @focus="$event.target.select()"
               class="w-16 h-12 text-center text-2xl font-black bg-blue-50 border border-blue-200 rounded-xl focus:outline-none"
             />
             <button
@@ -100,6 +101,7 @@ const saveRoundScore = () => {
             <input
               v-model.number="current.s2"
               type="number"
+              @focus="$event.target.select()"
               class="w-16 h-12 text-center text-2xl font-black bg-red-50 border border-red-200 rounded-xl focus:outline-none"
             />
             <button
