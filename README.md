@@ -29,13 +29,3 @@ npm run build
 - Build output directory: `dist`
 
 后续 push 会自动部署。
-
-### 2. 命令行部署（wrangler）
-
-```bash
-npm run build
-npx wrangler login          # 首次
-npx wrangler pages deploy dist --project-name badfive
-```
-
-或使用 `npm run deploy`。
